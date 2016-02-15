@@ -3,6 +3,21 @@ var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
+require('dotenv').load();
+console.log(process.env.NAME);
+console.log(process.env.NAME + " " + process.env.A + " " + process.env.B);
+
+var request = require('request');
+request('mongodb://localhost/products_api', function(err, response, body){
+  if (err) {
+    console.log(err);
+    console.log(body);
+    throw err;
+  }
+});
+
+// res.json(json(parse().body));
+
 
 app.use(express.static('./client'));
 

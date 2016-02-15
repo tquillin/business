@@ -19,9 +19,11 @@
   "homepage": "https://github.com/tquillin/le-projet-MEAN#readme",
   "dependencies": {
     "body-parser": "^1.14.2",
+    "dotenv": "^2.0.0",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "kerberos": "0.0.18",
-    "mongoose": "^4.4.2"
+    "mongoose": "^4.4.2",
+    "request": "^2.69.0"
   }
 }
